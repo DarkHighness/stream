@@ -4,10 +4,7 @@
 
 module Data.Stream where
 
-import Control.Applicative
-import Control.Monad
-import Data.Functor.Identity
-import Data.Monoid
+import Control.Monad ( ap, liftM, (>=>) )
 import System.IO (IOMode (ReadMode, WriteMode), hClose, hGetLine, hIsEOF, openFile, Handle, hPutStrLn, withFile)
 
 data Stream (m :: * -> *) a where
