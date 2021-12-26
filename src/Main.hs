@@ -1,7 +1,6 @@
 module Main where
 
-import Data.Stream
+import A.Stream
 
 main :: IO ()
-main = do
-  putStrLn "hello world"
+main = undefined 

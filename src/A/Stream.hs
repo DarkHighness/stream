@@ -2,7 +2,7 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE TupleSections #-}
 
-module Data.Stream where
+module A.Stream where
 
 import Control.Monad ( ap, liftM, (>=>) )
 import System.IO (IOMode (ReadMode, WriteMode), hClose, hGetLine, hIsEOF, openFile, Handle, hPutStrLn, withFile)
